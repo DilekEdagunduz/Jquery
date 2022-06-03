@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li ></li>
+    </ul>
+    <label for="add_to_li" >eklemek istedğiniz karakterleri yzınız.</label>
+    <input type="text" name="" id="text">
+   
+    <button >ekle</button>
+</body>
+<script>
+    // 5) Ekrana içerisinde 5 adet li elemanı olan bir ul koy. Daha sonra bir input ve bir buton koy. 
+    // Butona her tıkladığında inputtan aldığı veriyi yeni bir li elementi olarak eklesin.
+    $("button").click(function () {
+        var deger = $("#text").val();
+        $("#ul").append("<li>"+ deger+ "</li>");
+    });
+    </script>
+</script>
+</html>
